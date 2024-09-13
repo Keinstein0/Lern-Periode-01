@@ -1,22 +1,25 @@
-﻿namespace _ELS__Airport_Security
+﻿using System;
+using IronPython.Hosting;
+using Microsoft.Scripting.Hosting;
+
+namespace _ELS__Airport_Security
 {
     internal class Program
     {
         static void Main(string[] args)
         {
 
-            // Random arrangement of test garbage
 
-            Console.WriteLine("Nothing");
+            Communicator c = new Communicator() { sourcefile = "C:\\Users\\alex\\source\\repos\\ELS-Airport-Security\\ELS-Airport-Security\\test.py" };
 
-            string input = "C:\\Users\\alex\\source\\repos\\[ELS] Airport Security\\[ELS] Airport Security\\Animations\\animation_test.csv";
+            Console.WriteLine(c.get_response("Hello "));
 
-            Painter p = new Painter() { sourcefile = input };
 
             while (true)
             {
-                p.play_animation(400);
+                // :-)
             }
+            
         }
     }
 
@@ -61,6 +64,26 @@
 
         }
 
+
+    }
+
+
+    public class Communicator
+    {
+        public required string sourcefile;
+
+        public string get_response(string input)
+        {
+            ScriptEngine engine = Python.CreateEngine();
+
+            dynamic pythonScript = engine.ExecuteFile(this.sourcefile);
+            dynamic calling = pythonScript.get_response;
+
+            string result = calling(input);
+
+            return result;
+
+        }
 
     }
 }
