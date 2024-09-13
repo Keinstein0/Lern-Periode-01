@@ -12,7 +12,7 @@ namespace _ELS__Airport_Security
 
             Communicator c = new Communicator() { sourcefile = "C:\\Users\\alex\\source\\repos\\ELS-Airport-Security\\ELS-Airport-Security\\test.py" };
 
-            Console.WriteLine(c.get_response("Hello "));
+            Console.WriteLine(c.get_response("Give me a Hello World as an answer"));
 
 
             while (true)
