@@ -26,9 +26,9 @@ Ich konnte heute das Painter objekt in meinem code Implementieren. Dabei lernte 
 - [ ] Output und (noch nicht funktionale) Vermittlungsfunktion etabliert
 
 ## Feinplanung 13.9.24:
-- [ ] Programmiersprachen Interface Machen
-- [ ] API funktionsfähig
-- [ ] C# Interagiert mit dem python file
+- [X] Programmiersprachen Interface Machen
+- [X] API funktionsfähig
+- [X] C# Interagiert mit dem python file
 - [ ] Programm verarbeitet C# input zu ChatGPT zu C# 
 
 
