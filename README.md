@@ -31,7 +31,11 @@ Ich konnte heute das Painter objekt in meinem code Implementieren. Dabei lernte 
 - [X] C# Interagiert mit dem python file
 - [ ] Programm verarbeitet C# input zu ChatGPT zu C# 
 
-
+## Feinplanung 20.9.24:
+- [ ] ChatGPT API vollständig Integriert
+- [ ] Inputs Werden Verarbeitet
+- [ ] Spiellogik Fertig
+- [ ] Spiel (grundsätzlich) spielbar
 
 
 
