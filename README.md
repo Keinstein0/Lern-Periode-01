@@ -35,11 +35,14 @@ Ich konnte heute das Painter objekt in meinem code Implementieren. Dabei lernte 
 - [ ] ChatGPT API vollständig Integriert
 - [ ] Inputs Werden Verarbeitet
 
+## Programmdokumentation
+Das programm nimmt einen input vom Python code und verarbeitet ihn weiter. Je nach Output spielt es eine andere Animation aus.
+![20240920-0916-07 1162064-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/2361e16b-2610-4953-ac35-880063f58886)
 
+Je nach input gibt es entweder "good/bad" aus.
 
-
-
-
+## Reflexion
+Ich konnte meine Planung relativ realistisch gestalten, leider jedoch konnte ich nicht einplanen, dass ich einmal krank sein würde. Dadurch konnte ich nur knapp fertig werden. Ausserdem hatte ich das unerwartete problem von "Kosten". Ich würde sagen dass ich in Zukunft meine Planung variabler gestalten könnte. Mir ist aufgefallen, dass mir pausen bei bugs manchmal helfen. Sonst passiert es das ich einfach für ewig auf meinen Bildschirm starre, ohne eine Lösung zu finden. Ausserdem würde es vielleicht etwas bringen, am Anfang etwas nachforschung zu machen. So könnte ich probleme & effizientere lösungen finden. Das würde vermeiden, das ich (wieder) an eine "unmögliche" Wand stossen würde. (z.b Geld an API zahlen müssen). Alles in allem war dieses Projekt (meinem Level) angebracht und ich konnte viel Neues lernen.
 
 
 
