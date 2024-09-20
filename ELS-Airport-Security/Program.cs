@@ -8,7 +8,7 @@ namespace _ELS__Airport_Security
     {
         static void Main(string[] args)
         {
-            
+            Thread.Sleep(10000);
             Game ELS = new Game();
             ELS.run_game(); // Run Game
             
@@ -24,17 +24,19 @@ namespace _ELS__Airport_Security
                 new Painter() {sourcefile = "C:\\Users\\alex\\source\\repos\\ELS-Airport-Security\\ELS-Airport-Security\\Animations\\animation_01.csv"},
                 new Painter() {sourcefile = "C:\\Users\\alex\\source\\repos\\ELS-Airport-Security\\ELS-Airport-Security\\Animations\\animation_02.csv"},
                 new Painter() {sourcefile = "C:\\Users\\alex\\source\\repos\\ELS-Airport-Security\\ELS-Airport-Security\\Animations\\animation_03.csv"},
+                new Painter() {sourcefile = "C:\\Users\\alex\\source\\repos\\ELS-Airport-Security\\ELS-Airport-Security\\Animations\\animation_04.csv"}
             };
             
             Communicator com = new Communicator() { sourcefile = "C:\\Users\\alex\\source\\repos\\ELS-Airport-Security\\ELS-Airport-Security\\test.py" };
 
-            bool process = com.get_response(0); //0 -> Animation 2, 1-> Animation 1
+            bool process = com.get_response(1); //0 -> Animation 2, 1-> Animation 1
 
             animations[0].play_animation(300);
 
             if (process)
             {
                 animations[1].play_animation(200);
+                animations[3].play_animation(300);
             }
             else
             {
