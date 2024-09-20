@@ -34,8 +34,6 @@ Ich konnte heute das Painter objekt in meinem code Implementieren. Dabei lernte 
 ## Feinplanung 20.9.24:
 - [ ] ChatGPT API vollständig Integriert
 - [ ] Inputs Werden Verarbeitet
-- [ ] Spiellogik Fertig
-- [ ] Spiel (grundsätzlich) spielbar
 
 
 
