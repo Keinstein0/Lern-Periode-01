@@ -1,33 +1,35 @@
-
-from openai import OpenAI
-import os
-
-
-
-key = "nenenenenemeinkeywirdnichtgescammt"
-OpenAI.my_api_key = key
+# Theoretical ChatGPT Processing
+# Not working because no money
+""" 
+#from openai import OpenAI
 
 
+client = OpenAI(api_key=key)
 
-#client = OpenAI(
-    # This is the default and can be omitted
-#    api_key=os.environ.get("auch nicht im kommenta >:["),
-#)
 
-chat_completion = OpenAI.chat.completions.create(
+
+completion = client.chat.completions.create(
+    model="gpt-3.5-turbo",
     messages=[
+        {"role": "system", "content": "You are a helpful assistant."},
         {
             "role": "user",
-            "content": "Say this is a test",
+            "content": "Say Hi!"
         }
-    ],
-    model="gpt-3.5-turbo",
+    ]
 )
 
+print(completion.choices[0].message)
+"""
 
 
 def get_response(a):
-    return str(a+"World")
+    rand = a
+    if rand == 1:
+        return (True)
+    else:
+        return (False)
+
 
 
 

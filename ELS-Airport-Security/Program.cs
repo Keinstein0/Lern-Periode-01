@@ -8,18 +8,40 @@ namespace _ELS__Airport_Security
     {
         static void Main(string[] args)
         {
-
-
-            Communicator c = new Communicator() { sourcefile = "C:\\Users\\alex\\source\\repos\\ELS-Airport-Security\\ELS-Airport-Security\\test.py" };
-
-            Console.WriteLine(c.get_response("Give me a Hello World as an answer"));
-
-
-            while (true)
-            {
-                // :-)
-            }
             
+            Game ELS = new Game();
+            ELS.run_game(); // Run Game
+            
+        }
+    }
+
+    public class Game
+    {
+        public void run_game()
+        {
+
+            Painter[] animations = {
+                new Painter() {sourcefile = "C:\\Users\\alex\\source\\repos\\ELS-Airport-Security\\ELS-Airport-Security\\Animations\\animation_01.csv"},
+                new Painter() {sourcefile = "C:\\Users\\alex\\source\\repos\\ELS-Airport-Security\\ELS-Airport-Security\\Animations\\animation_02.csv"},
+                new Painter() {sourcefile = "C:\\Users\\alex\\source\\repos\\ELS-Airport-Security\\ELS-Airport-Security\\Animations\\animation_03.csv"},
+            };
+            
+            Communicator com = new Communicator() { sourcefile = "C:\\Users\\alex\\source\\repos\\ELS-Airport-Security\\ELS-Airport-Security\\test.py" };
+
+            bool process = com.get_response(0); //0 -> Animation 2, 1-> Animation 1
+
+            animations[0].play_animation(300);
+
+            if (process)
+            {
+                animations[1].play_animation(200);
+            }
+            else
+            {
+                animations[2].play_animation(200);
+            }
+
+
         }
     }
 
@@ -61,7 +83,6 @@ namespace _ELS__Airport_Security
                 this.paint_image(sourcelist[i]); // paint image of the part of the list
                 Thread.Sleep(delay);
             }
-
         }
 
 
@@ -72,14 +93,14 @@ namespace _ELS__Airport_Security
     {
         public required string sourcefile;
 
-        public string get_response(string input)
+        public bool get_response(int input)
         {
             ScriptEngine engine = Python.CreateEngine();
 
             dynamic pythonScript = engine.ExecuteFile(this.sourcefile);
             dynamic calling = pythonScript.get_response;
 
-            string result = calling(input);
+            bool result = calling(input);
 
             return result;
 
