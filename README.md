@@ -1,49 +1,44 @@
-# Lern-Periode-1
+#Lern-Periode-1
 
-## Grobplanung:
+##Grobplanung:
+Ursprünglich war das Ziel meines Projekts die Erstellung eines Spiels, in dem man versucht, unterschiedliche Items durch die Flughafensicherheit zu schmuggeln. Bringt man ein gefährliches Item durch, gewinnt man. Eine API von ChatGPT prüft, ob das Item gefährlich ist oder nicht.
 
-Das ziel meines Ersten Projekts wird die erstellung eines Spiels, in dem man eine reihe von (potenziell gefährlichen) 'items' in einen rucksack packt. Eine API von ChatGPT bestimmt ob diese items an Bord des Flugzeug dürfen. Schafft man es einen gefährlichen Rucksack durchzubringen, gewinnt man.
+Eine Animation, wie die Tasche in einen Scanner getan wird, wird abgespielt. Je nachdem, ob ChatGPT die Tasche als gefährlich markiert oder nicht, wird entweder "good" – für einen sicheren Input – oder "bad" – für gefährlich angezeigt. Sichere Items wären z. B. Apfel, Brief, Laptop (...). Beispiele für einen schlechten Input wären z. B. Pistole, Wasserflasche, Taschenmesser (...).
 
-Das Spiel beginnt mit einer Abfrage was alles in den Rucksack gepackt werden soll. Sobald die Tasche 'voll' ist, Spielt eine Animation wie die Tasche in einen scanner getan wird und je nach dem ob ChatGPT die Tasche als gefährlich markiert oder nicht, wird entweder 'MISSION COMPLETE' oder 'MISSION FAILIURE' Angezeigt.
+Schlussendlich konnte ich alles umsetzen – außer den ChatGPT-Teil. Da die API kostet, konnte ich nur eine Simulation dafür machen. Die Animationen und Logik konnte ich vollständig umsetzen. Sogar der API-Teil würde funktionieren, wenn ich Geld überweisen würde. Als Ersatz gibt der ChatGPT-Teil einfach einen (fast) zufälligen Output aus.
 
 **Projekt von 23.08.2024 bis 20.09.2024**
 
-## Feinplanung 30.8.24:
-
+##Feinplanung 30.08.2024:
 - [ ] Funktionsweise mit einem Diagramm planen
-- [X] Projekt erstellen, C# objekte gelernt
-- [ ] Grundstruktur des Spiels etablieren (game loop, objekte)
-- [ ] Grundstruktur des Spiels etabliert (game loop, objekte)
+- [X] Projekt erstellt, C#-Objekte gelernt
+- [ ] Grundstruktur des Spiels etablieren (Game Loop, Objekte)
+- [ ] Grundstruktur des Spiels etabliert (Game Loop, Objekte)
+Reflexion: Ich konnte heute das Painter-Objekt in meinem Code implementieren. Dabei lernte ich, wie Objekte in C# funktionieren und wie man in eine .csv-Datei schreibt.
 
-**Reflektion:**
-Ich konnte heute das Painter objekt in meinem code Implementieren. Dabei lernte ich wie Objekte in C# Funktionieren und wie man in ein .csv file schreibt.
-
-## Feinplanung 6.9.24:
-
-- [ ] Restliche nicht AI elemente Fertig
+##Feinplanung 06.09.2024:
+- [ ] Restliche nicht-AI-Elemente fertig
 - [ ] Input fertig
-- [ ] Animationen Vollständig designt & Implememtiert
+- [ ] Animationen vollständig designt & implementiert
 - [ ] Output und (noch nicht funktionale) Vermittlungsfunktion etabliert
-
-## Feinplanung 13.9.24:
-- [X] Programmiersprachen Interface Machen
+ 
+##Feinplanung 13.09.2024:
+- [X] Programmiersprachen-Interface gemacht
 - [X] API funktionsfähig
-- [X] C# Interagiert mit dem python file
-- [ ] Programm verarbeitet C# input zu ChatGPT zu C# 
+- [X] C# interagiert mit dem Python-File
+- [ ] Programm verarbeitet C#-Input zu ChatGPT und zurück zu C#
+ 
+##Feinplanung 20.09.2024:
+- [ ] ChatGPT-API vollständig integriert
+- [ ] Inputs werden verarbeitet
+ 
+##Programmdokumentation:
+Das Programm nimmt einen Input vom Python-Code und verarbeitet ihn weiter. Je nach Output spielt es eine andere Animation ab.
 
-## Feinplanung 20.9.24:
-- [ ] ChatGPT API vollständig Integriert
-- [ ] Inputs Werden Verarbeitet
+Je nach Input gibt es entweder "good" oder "bad" als Ausgabe.
 
-## Programmdokumentation
-Das programm nimmt einen input vom Python code und verarbeitet ihn weiter. Je nach Output spielt es eine andere Animation aus.
-![20240920-0916-07 1162064-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/2361e16b-2610-4953-ac35-880063f58886)
-
-Je nach input gibt es entweder "good/bad" aus.
-
-## Reflexion
-Ich konnte meine Planung relativ realistisch gestalten, leider jedoch konnte ich nicht einplanen, dass ich einmal krank sein würde. Dadurch konnte ich nur knapp fertig werden. Ausserdem hatte ich das unerwartete problem von "Kosten". Ich würde sagen dass ich in Zukunft meine Planung variabler gestalten könnte. Mir ist aufgefallen, dass mir pausen bei bugs manchmal helfen. Sonst passiert es das ich einfach für ewig auf meinen Bildschirm starre, ohne eine Lösung zu finden. Ausserdem würde es vielleicht etwas bringen, am Anfang etwas nachforschung zu machen. So könnte ich probleme & effizientere lösungen finden. Das würde vermeiden, das ich (wieder) an eine "unmögliche" Wand stossen würde. (z.b Geld an API zahlen müssen). Alles in allem war dieses Projekt (meinem Level) angebracht und ich konnte viel Neues lernen.
-
+##Reflexion:
+Ich konnte meine Planung relativ realistisch gestalten, jedoch konnte ich nicht einplanen, dass ich einmal krank sein würde. Dadurch konnte ich nur knapp fertig werden. Außerdem hatte ich das unerwartete Problem der "Kosten". Ich würde sagen, dass ich in Zukunft meine Planung variabler gestalten könnte. Mir ist aufgefallen, dass mir Pausen bei Bugs manchmal helfen. Sonst passiert es, dass ich einfach ewig auf meinen Bildschirm starre, ohne eine Lösung zu finden. Außerdem würde es vielleicht etwas bringen, am Anfang etwas Nachforschung zu betreiben. So könnte ich Probleme und effizientere Lösungen finden. Das würde vermeiden, dass ich (wieder) an eine "unmögliche" Wand stoße (z. B. Geld für die API zahlen müssen). Alles in allem war dieses Projekt meinem Level angemessen, und ich konnte viel Neues lernen.
 
 
 
